@@ -36,6 +36,10 @@ class ViewController: UIViewController {
         }
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+    
     @IBAction func decodeButtonPressed(_ sender: UIButton) {
         
     }
