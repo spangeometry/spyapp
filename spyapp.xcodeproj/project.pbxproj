@@ -47,6 +47,7 @@
 		22A8643A214D10D40010880C /* spyappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spyappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A8643E214D10D40010880C /* spyappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spyappUITests.swift; sourceTree = "<group>"; };
 		22A86440214D10D40010880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EC3216214F272700441B5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		22A86412214D10D10010880C = {
 			isa = PBXGroup;
 			children = (
+				22EC3216214F272700441B5E /* README.md */,
 				22A8641D214D10D20010880C /* spyapp */,
 				22A86432214D10D40010880C /* spyappTests */,
 				22A8643D214D10D40010880C /* spyappUITests */,
