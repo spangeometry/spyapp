@@ -14,6 +14,8 @@
 		22A86429214D10D40010880C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A86427214D10D40010880C /* LaunchScreen.storyboard */; };
 		22A86434214D10D40010880C /* spyappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A86433214D10D40010880C /* spyappTests.swift */; };
 		22A8643F214D10D40010880C /* spyappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8643E214D10D40010880C /* spyappUITests.swift */; };
+		22EC3218214FC85900441B5E /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC3217214FC85900441B5E /* CipherFactory.swift */; };
+		22EC321C214FD2CE00441B5E /* CaeserCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC321B214FD2CE00441B5E /* CaeserCipher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		22A8643E214D10D40010880C /* spyappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spyappUITests.swift; sourceTree = "<group>"; };
 		22A86440214D10D40010880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22EC3216214F272700441B5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		22EC3217214FC85900441B5E /* CipherFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
+		22EC321B214FD2CE00441B5E /* CaeserCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaeserCipher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				22A8641E214D10D20010880C /* AppDelegate.swift */,
 				22A86420214D10D20010880C /* ViewController.swift */,
+				22EC3217214FC85900441B5E /* CipherFactory.swift */,
+				22EC321B214FD2CE00441B5E /* CaeserCipher.swift */,
 				22A86422214D10D20010880C /* Main.storyboard */,
 				22A86425214D10D30010880C /* Assets.xcassets */,
 				22A86427214D10D40010880C /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EC3218214FC85900441B5E /* CipherFactory.swift in Sources */,
 				22A86421214D10D20010880C /* ViewController.swift in Sources */,
 				22A8641F214D10D20010880C /* AppDelegate.swift in Sources */,
+				22EC321C214FD2CE00441B5E /* CaeserCipher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -81,10 +81,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyS-gM-e18">
                                 <rect key="frame" x="55.999999999999993" y="176" width="100.33333333333331" height="30"/>
                                 <state key="normal" title="Decode"/>
+                                <connections>
+                                    <action selector="decodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffZ-d6-g81"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-xb-Uhs">
                                 <rect key="frame" x="258.33333333333331" y="176" width="99.666666666666686" height="30"/>
                                 <state key="normal" title="Encode"/>
+                                <connections>
+                                    <action selector="encodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiB-VW-9Kb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
