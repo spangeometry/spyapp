@@ -17,7 +17,7 @@ should be converted to upper-case before they are encrypted.
 - The mapping should be cyclical in either direction.  
     Example:
     Shifting by 1:
-    Z maps to 0, 9 maps to A
+    Z maps to 0, 9 maps to A  
     Shifting by -1:
     A maps to 9, 0 maps to Z
 
