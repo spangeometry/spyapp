@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var cipherOutputLabel: UILabel!
     
+    let factory = CipherFactory()
+    var cipherSelectedName: String = "Caesar"
+    var cipher: Cipher?
+    
+    
     var cipherSelected: Int = 0
     
     var inputText: String {
@@ -36,58 +41,46 @@ class ViewController: UIViewController {
         }
     }
     
-    override var prefersStatusBarHidden: Bool {
+    override var prefersStatusBarHidden: Bool { //Keeps status bar visible in landscape
         return false
     }
-    
+       
     @IBAction func decodeButtonPressed(_ sender: UIButton) {
-        
-    }
-    @IBAction func encodeButtonPressed(_ sender: UIButton) {
-        
+        cipher = factory.cipher(for: cipherSelectedName)
+        let decoded = cipher?.decodeText(inputText, secret: secretText)
+        cipherOutputLabel.text = decoded
     }
     
+    @IBAction func encodeButtonPressed(_ sender: UIButton) {
+        cipher = factory.cipher(for: cipherSelectedName)
+        let encoded = cipher?.encodeText(inputText, secret: secretText)
+        cipherOutputLabel.text = encoded
+    }
+    
+    @IBAction func cipherSelected(_ sender: Any) { //TODO: Shrink this function
+        outputLabel.text = "Output: " + cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
+        cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
+    }
+
     /*
-     @IBAction func encodeButtonPressed(_ sender: UIButton) {
-         guard let cipher = self.cipher else {
-             output.text = "No cipher selected"
-             return
-        }
-         if let encoded = cipher.encode(plaintext, secret: secretText) {
-         output.text = encoded
-         } else {
-         output.text = "Error encoding"
-         }
+     @IBAction func cipherSelected(_ sender: Any) { //TODO: Shrink this function
+     switch cipherControl.selectedSegmentIndex {
+     case 0:
+     outputLabel.text = "Output - Caesar";
+     cipherSelected = 0
+     cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
+     case 1:
+     outputLabel.text = "Output - Atbash";
+     cipherSelected = 1
+     cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
+     case 2:
+     outputLabel.text = "Output - Vigenère";
+     cipherSelected = 2
+     default:
+     break
      }
-     
-     @IBAction func cipherButtonPressed(_ sender: UIButton) {
-     guard
-     let buttonLable = sender.titleLabel,
-     let buttonText = buttonLable.text
-     else {
-     output.text = "No button or no button text"
-     return
-     }
-     cipher = factory.cipher(for: buttonText)
      }
      */
     
-    @IBAction func cipherSelected(_ sender: Any) {
-        switch cipherControl.selectedSegmentIndex {
-        case 0:
-            outputLabel.text = "Output - Caesar";
-            cipherSelected = 0
-        case 1:
-            outputLabel.text = "Output - Atbash";
-            cipherSelected = 1
-        case 2:
-            outputLabel.text = "Output - Vigenère";
-            cipherSelected = 2
-        default:
-            break
-        }
-    }
-    
-
 }
 

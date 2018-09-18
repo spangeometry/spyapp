@@ -3,8 +3,9 @@ import Foundation
 struct CipherFactory {
 
     private var ciphers: [String: Cipher] = [
-        "Ceasar": CaeserCipher(),
-        "Button": CaeserCipher()
+        "Caesar": CaesarCipher(),
+        "Atbash": AtbashCipher(),
+        "Vigenère": VigenereCipher()
     ]
 
     func cipher(for key: String) -> Cipher {
