@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     var inputText: String {
         if let text = inputField.text {
-            return text
+            return text.uppercased()
         } else {
             return ""
         }

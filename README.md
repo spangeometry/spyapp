@@ -8,7 +8,7 @@ Prompt:
 - Once you update the Cipher protocol you will have to update the CaesarCipher with a decrypt method. [Done]
 
 2. Create a new cipher named AlphanumericCesarCipher that implements the Cipher protocol. Add the cipher to the CipherFactory. Your cipher should:
-- Only take alphanumeric input. (characters A-Z, a-z and numbers 0-9) [Restrict text to alphanumerics only]
+- Only take alphanumeric input. (characters A-Z, a-z and numbers 0-9) [Restrict text to alphanumerics only, or strip input]
 - The output should only include characters A-Z or 0-9. Lower-case characters should be converted to upper-case before they are encrypted. [Uppercase is done]
 - The mapping should be cyclical in either direction.  
     Example:  
