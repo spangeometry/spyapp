@@ -10,11 +10,14 @@ struct CaesarCipher: Cipher {
 
         for character in plaintext {
             let unicode = character.unicodeScalars.first!.value
-            if (unicode >= "A".unicodeScalars.first!.value && unicode <= "Z".unicodeScalars.first!.value) || (unicode >= "0".unicodeScalars.first!.value && unicode <= "9".unicodeScalars.first!.value) {
-                var shiftedUnicode = unicode + shiftBy
+            
+            if (unicode >= "A".unicodeScalars.first!.value && unicode <= "Z".unicodeScalars.first!.value) || (unicode >= "0".unicodeScalars.first!.value && unicode <= "9".unicodeScalars.first!.value) { //If unicode isn't in the alphabet or numbers, don't process it
                 
+                var shiftedUnicode = unicode + shiftBy //
                 
                 if shiftedUnicode > "Z".unicodeScalars.first!.value {
+                    //if temp = shiftedunicode - 90 > 10, let encode temp - a and lot that
+                    //self encodetext re-encode the whole string
                     shiftedUnicode = shiftedUnicode - "Z".unicodeScalars.first!.value + "0".unicodeScalars.first!.value - 1
                 }
                 if (shiftedUnicode > "9".unicodeScalars.first!.value && shiftedUnicode < "A".unicodeScalars.first!.value) {
