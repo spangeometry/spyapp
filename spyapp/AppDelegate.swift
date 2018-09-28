@@ -2,6 +2,8 @@
 //  AppDelegate.swift
 //  spyapp
 //
+//  Basically untouched from default creation.
+//
 //  Created by Sam on 9/15/18.
 //  Copyright © 2018 Sam. All rights reserved.
 //

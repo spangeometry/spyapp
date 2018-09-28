@@ -11,26 +11,70 @@ import XCTest
 
 class spyappTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAtbashEncode() {
+        let cipher = AtbashCipher()
+        let plaintext = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        
+        let encoded = cipher.encodeText(plaintext, secret: "")
+        let desired = "ZYXWVUTSRQPONMLKJIHGFEDCBA0123456789"
+        
+        XCTAssertEqual(encoded, desired)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testAtbashDecode() {
+        let cipher = AtbashCipher()
+        let plaintext = "ZYXWVUTSRQPONMLKJIHGFEDCBA0123456789"
+        
+        let encoded = cipher.decodeText(plaintext, secret: "")
+        let desired = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        
+        XCTAssertEqual(encoded, desired)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCaesarEncode() {
+        let cipher = AlphanumericCaesarCipher()
+        let plaintext = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let secret = "7"
+        
+        let encoded = cipher.encodeText(plaintext, secret: secret)
+        let desired = "HIJKLMNOPQRSTUVWXYZ0123456789ABCDEFG"
+        
+        XCTAssertEqual(encoded, desired)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCaesarDecode() {
+        let cipher = AlphanumericCaesarCipher()
+        let plaintext = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let secret = "7"
+        
+        let decoded = cipher.decodeText(plaintext, secret: secret)
+        let desired = "3456789ABCDEFGHIJKLMNOPQRSTUVWXYZ012"
+        
+        XCTAssertEqual(decoded, desired)
     }
+    
+    func testVigenereEncode() {
+        let cipher = VigenereCipher()
+        let plaintext = "123HEISENBERG789"
+        let secret = "SAUL"
+        
+        let encoded = cipher.encodeText(plaintext, secret: secret)
+        let desired = "123ZECDWNVPJG789"
+        
+        XCTAssertEqual(encoded, desired)
+    }
+    
+    func testVigenereDecode() {
+        let cipher = VigenereCipher()
+        let plaintext = "123ZECDWNVPJG789"
+        let secret = "SAUL"
+        
+        let decoded = cipher.decodeText(plaintext, secret: secret)
+        let desired = "123HEISENBERG789"
+        
+        XCTAssertEqual(decoded, desired)
+    }
+    
+
     
 }
