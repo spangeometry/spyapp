@@ -3,7 +3,7 @@ import Foundation
 struct CipherFactory {
 
     private var ciphers: [String: Cipher] = [
-        "Caesar": CaesarCipher(),
+        "Caesar": AlphanumericCaesarCipher(),
         "Atbash": AtbashCipher(),
         "Vigenère": VigenereCipher()
     ]

@@ -56,31 +56,38 @@ class ViewController: UIViewController {
         let encoded = cipher?.encodeText(inputText, secret: secretText)
         cipherOutputLabel.text = encoded
     }
-    
+    /*
     @IBAction func cipherSelected(_ sender: Any) { //TODO: Shrink this function
         outputLabel.text = "Output: " + cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
         cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
     }
-
-    /*
-     @IBAction func cipherSelected(_ sender: Any) { //TODO: Shrink this function
-     switch cipherControl.selectedSegmentIndex {
-     case 0:
-     outputLabel.text = "Output - Caesar";
-     cipherSelected = 0
-     cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
-     case 1:
-     outputLabel.text = "Output - Atbash";
-     cipherSelected = 1
-     cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
-     case 2:
-     outputLabel.text = "Output - Vigenère";
-     cipherSelected = 2
-     default:
-     break
-     }
-     }
      */
+
+    
+     @IBAction func cipherSelected(_ sender: Any) { //TODO: Shrink this function
+        switch cipherControl.selectedSegmentIndex {
+        case 0:
+             outputLabel.text = "Output - Caesar";
+             cipherSelected = 0
+             cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
+             secretField.text = ""
+             secretField.placeholder = "Caesar accepts numerical keys from 1 to 7"
+             secretField.isUserInteractionEnabled = true
+        case 1:
+             outputLabel.text = "Output - Atbash";
+             cipherSelected = 1
+             cipherSelectedName = cipherControl.titleForSegment(at: cipherControl.selectedSegmentIndex)!
+             secretField.text = ""
+             secretField.placeholder = "Atbash does not need a key"
+             secretField.isUserInteractionEnabled = false
+        case 2:
+             outputLabel.text = "Output - Vigenère";
+             cipherSelected = 2
+        default:
+            break
+     }
+     }
+    
     
 }
 

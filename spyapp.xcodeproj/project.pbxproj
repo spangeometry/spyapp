@@ -18,7 +18,7 @@
 		22A864532150F03E0010880C /* AtbashCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A864522150F03E0010880C /* AtbashCipher.swift */; };
 		22A864552150FD0E0010880C /* VigenereCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A864542150FD0E0010880C /* VigenereCipher.swift */; };
 		22EC3218214FC85900441B5E /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC3217214FC85900441B5E /* CipherFactory.swift */; };
-		22EC321C214FD2CE00441B5E /* CaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC321B214FD2CE00441B5E /* CaesarCipher.swift */; };
+		22EC321C214FD2CE00441B5E /* AlphanumericCaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC321B214FD2CE00441B5E /* AlphanumericCaesarCipher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		22A864542150FD0E0010880C /* VigenereCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VigenereCipher.swift; sourceTree = "<group>"; };
 		22EC3216214F272700441B5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22EC3217214FC85900441B5E /* CipherFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
-		22EC321B214FD2CE00441B5E /* CaesarCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarCipher.swift; sourceTree = "<group>"; };
+		22EC321B214FD2CE00441B5E /* AlphanumericCaesarCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphanumericCaesarCipher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				22A86420214D10D20010880C /* ViewController.swift */,
 				22EC3217214FC85900441B5E /* CipherFactory.swift */,
 				22A864502150EF7C0010880C /* Cipher.swift */,
-				22EC321B214FD2CE00441B5E /* CaesarCipher.swift */,
+				22EC321B214FD2CE00441B5E /* AlphanumericCaesarCipher.swift */,
 				22A864522150F03E0010880C /* AtbashCipher.swift */,
 				22A864542150FD0E0010880C /* VigenereCipher.swift */,
 				22A86422214D10D20010880C /* Main.storyboard */,
@@ -277,7 +277,7 @@
 				22A86421214D10D20010880C /* ViewController.swift in Sources */,
 				22A864512150EF7C0010880C /* Cipher.swift in Sources */,
 				22A8641F214D10D20010880C /* AppDelegate.swift in Sources */,
-				22EC321C214FD2CE00441B5E /* CaesarCipher.swift in Sources */,
+				22EC321C214FD2CE00441B5E /* AlphanumericCaesarCipher.swift in Sources */,
 				22A864532150F03E0010880C /* AtbashCipher.swift in Sources */,
 				22A864552150FD0E0010880C /* VigenereCipher.swift in Sources */,
 			);
