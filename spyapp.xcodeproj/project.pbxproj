@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228CD97B215DC4C600716E94 /* CaesarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228CD97A215DC4C600716E94 /* CaesarTests.swift */; };
+		228CD97D215DC4FB00716E94 /* AtbashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228CD97C215DC4FB00716E94 /* AtbashTests.swift */; };
 		22A8641F214D10D20010880C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8641E214D10D20010880C /* AppDelegate.swift */; };
 		22A86421214D10D20010880C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A86420214D10D20010880C /* ViewController.swift */; };
 		22A86424214D10D20010880C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A86422214D10D20010880C /* Main.storyboard */; };
 		22A86426214D10D30010880C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A86425214D10D30010880C /* Assets.xcassets */; };
 		22A86429214D10D40010880C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A86427214D10D40010880C /* LaunchScreen.storyboard */; };
-		22A86434214D10D40010880C /* spyappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A86433214D10D40010880C /* spyappTests.swift */; };
-		22A8643F214D10D40010880C /* spyappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8643E214D10D40010880C /* spyappUITests.swift */; };
+		22A86434214D10D40010880C /* VigenereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A86433214D10D40010880C /* VigenereTests.swift */; };
 		22A864512150EF7C0010880C /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A864502150EF7C0010880C /* Cipher.swift */; };
 		22A864532150F03E0010880C /* AtbashCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A864522150F03E0010880C /* AtbashCipher.swift */; };
 		22A864552150FD0E0010880C /* VigenereCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A864542150FD0E0010880C /* VigenereCipher.swift */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		228CD97A215DC4C600716E94 /* CaesarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaesarTests.swift; sourceTree = "<group>"; };
+		228CD97C215DC4FB00716E94 /* AtbashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtbashTests.swift; sourceTree = "<group>"; };
 		22A8641B214D10D20010880C /* spyapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spyapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A8641E214D10D20010880C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A86420214D10D20010880C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,11 +50,9 @@
 		22A86428214D10D40010880C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A8642A214D10D40010880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A8642F214D10D40010880C /* spyappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spyappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A86433214D10D40010880C /* spyappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spyappTests.swift; sourceTree = "<group>"; };
+		22A86433214D10D40010880C /* VigenereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigenereTests.swift; sourceTree = "<group>"; };
 		22A86435214D10D40010880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A8643A214D10D40010880C /* spyappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spyappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A8643E214D10D40010880C /* spyappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spyappUITests.swift; sourceTree = "<group>"; };
-		22A86440214D10D40010880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A864502150EF7C0010880C /* Cipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
 		22A864522150F03E0010880C /* AtbashCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtbashCipher.swift; sourceTree = "<group>"; };
 		22A864542150FD0E0010880C /* VigenereCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VigenereCipher.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 				22EC3216214F272700441B5E /* README.md */,
 				22A8641D214D10D20010880C /* spyapp */,
 				22A86432214D10D40010880C /* spyappTests */,
-				22A8643D214D10D40010880C /* spyappUITests */,
 				22A8641C214D10D20010880C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,19 +127,12 @@
 		22A86432214D10D40010880C /* spyappTests */ = {
 			isa = PBXGroup;
 			children = (
-				22A86433214D10D40010880C /* spyappTests.swift */,
+				22A86433214D10D40010880C /* VigenereTests.swift */,
+				228CD97C215DC4FB00716E94 /* AtbashTests.swift */,
+				228CD97A215DC4C600716E94 /* CaesarTests.swift */,
 				22A86435214D10D40010880C /* Info.plist */,
 			);
 			path = spyappTests;
-			sourceTree = "<group>";
-		};
-		22A8643D214D10D40010880C /* spyappUITests */ = {
-			isa = PBXGroup;
-			children = (
-				22A8643E214D10D40010880C /* spyappUITests.swift */,
-				22A86440214D10D40010880C /* Info.plist */,
-			);
-			path = spyappUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A86434214D10D40010880C /* spyappTests.swift in Sources */,
+				228CD97D215DC4FB00716E94 /* AtbashTests.swift in Sources */,
+				228CD97B215DC4C600716E94 /* CaesarTests.swift in Sources */,
+				22A86434214D10D40010880C /* VigenereTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A8643F214D10D40010880C /* spyappUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

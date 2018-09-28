@@ -26,7 +26,7 @@ Your cipher should:
 
 5. No input should crash the app. Unwrap all optionals the way we discussed in class and display an appropriate error method. 
 
-6. Write unit tests for all model methods you add.
-- Tests for each cipher you create should be in their own file.
-- Try to test for all edge cases your cipher introduces.
-- Come up with meaningful names for your test classes and test cases. Well written tests serve as documentation of your code!
+6. Write unit tests for all model methods you add. ✓
+- Tests for each cipher you create should be in their own file. ✓
+- Try to test for all edge cases your cipher introduces. ✓
+- Come up with meaningful names for your test classes and test cases. Well written tests serve as documentation of your code! ✓
