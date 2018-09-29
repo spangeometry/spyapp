@@ -24,7 +24,7 @@ Your cipher should:
 - Make sure your app looks good on devices with different resolutions and in both horizontal and vertical orientation. ✓
 - Play around a little with interface builder and improve the look of the app. ✓
 
-5. No input should crash the app. Unwrap all optionals the way we discussed in class and display an appropriate error method. 
+5. No input should crash the app. Unwrap all optionals the way we discussed in class and display an appropriate error method. ✓
 
 6. Write unit tests for all model methods you add. ✓
 - Tests for each cipher you create should be in their own file. ✓
